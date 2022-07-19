@@ -1,0 +1,52 @@
+POS,CAR #,CLASS,DRIVERS,TEAM,CAR,TIME,LAPS,GAP
+1,20,,"Richard Lietz, Michael Christensen, Kevin Estre",GPX Racing,Porsche 911 GT3 R,02:20.99,363,
+2,998,,"Frederic Makowiecki, Patrick Pilet, Nick Tandy",Rowe Racing,Porsche 911 GT3 R,02:20.66,363,3.347
+3,4,,"Maro Engel, Yelmer Buurman, Luca Stolz",Mercedes-AMG Team BLACK FALCON,Mercedes-AMG GT3,02:20.93,363,17.945
+4,25,,"Markus Winkelhock, Frederic Vervisch, Christopher Haase",Audi Sport Team Sainteloc,Audi R8 LMS GT3 2019,02:20.95,363,22.425
+5,98,,"Sven Müller, Romain Dumas, Mathieu Jaminet",Rowe Racing,Porsche 911 GT3 R,02:20.85,362,1.503
+6,30,,"Mario Farnbacher, Renger van der Zande, Bertrand Baguette",Honda Team Motul,Honda Acura NSX GT3 2019,02:22.50,362,2.797
+7,99,,"Dennis Olsen, Matt Campbell, Dirk Werner",Rowe Racing,Porsche 911 GT3 R,02:21.32,362,10.785
+8,563,,"Dennis Lind, Andrea Caldarelli, Marco Mapelli",Orange 1 FFF Racing Team,Lamborghini Huracan GT3 2019,02:20.90,362,13.771
+9,117,,"Earl Bamber, Timo Bernhard, Laurens Vanthoor",KÜS Team75 Bernhard,Porsche 911 GT3 R,02:20.15,362,14.461
+10,999,,"Maxi Buhk, Lucas Auer, Maxi Götz",Mercedes-AMG Team GruppeM Racing,Mercedes-AMG GT3,02:20.67,362,15.417
+11,34,,"Mikkel Jensen, Christian Krognes, Nicky Catsburg",Walkenhorst Motorsport,BMW M6 GT3,02:21.42,362,24.801
+12,10,,"Charles Weerts, Norman Nato, Rik Breukers",Belgian Audi Club Team WRT,Audi R8 LMS GT3 2019,02:22.57,362,01:33.20
+13,88,,"Vincent Abril, Fabian Schiller, Raffaele Marciello",Mercedes-AMG Team Akka ASP,Mercedes-AMG GT3,02:21.87,361,5.89
+14,129,,"Christopher Mies, Ricardo Feller, Jamie Green",Montaplast by Land-Motorsport,Audi R8 LMS GT3 2019,02:22.62,361,9.8
+15,78,Silver Cup,"James Pull, Jordan Witt, Sandy Mitchell",Barwell Motorsport,Lamborghini Huracan GT3 2019,02:22.41,361,21.702
+16,63,,"Mirko Bortolotti, Christian Engelhart, Rolf Ineichen",GRT Grasser Racing Team,Lamborghini Huracan GT3 2019,02:21.41,361,21.834
+17,90,Silver Cup,"Nico Bastian, Timur Boguslavskiy, Felipe Fraga",AKKA ASP Team,Mercedes-AMG GT3,02:22.90,361,29.123
+18,18,,"Alexandre Imperatori, Oliver Jarvis, Edoardo Liberati",KCMG,Nissan GT-R Nismo GT3,02:21.44,360,7.258
+19,76,,"Marvin Kirchhöfer, Alex Lynn, Jake Dennis",R-Motorsport,Aston Martin Vantage AMR GT3,02:22.22,360,7.259
+20,44,,"Tristan Vautier, Lewis Williamson, Gary Paffett",Mercedes-AMG Team Strakka Racing,Mercedes-AMG GT3,02:21.62,360,7.62
+21,519,,"Phil Keen, Franck Perera, Giovanni Venturini",Orange 1 FFF Racing Team,Lamborghini Huracan GT3 2019,02:21.62,360,22.141
+22,97,Pro-AM Cup,"Salih Yoluc, Ahmad Al Harthy, Charlie Eastwood, Nicki Thiim",Oman Racing with TF Sport,Aston Martin Vantage AMR GT3,02:22.70,359,20.538
+23,1,,"Robin Frijns, Nico Müller, Rene Rast",Audi Sport Team WRT,Audi R8 LMS GT3 2019,02:20.84,358,-00:14:21.14
+24,6,Silver Cup,"Hubert Haupt, Patrick Assenheimer, Gabriele Piana, Abdulaziz Al Faisal",BLACK FALCON,Mercedes-AMG GT3,02:22.40,358,18.808
+25,2,,"Dries Vanthoor, Alex Riberas, Frank Stippler",Audi Sport Team WRT,Audi R8 LMS GT3 2019,02:20.66,358,23.292
+26,74,Pro-AM Cup,"Remon Vos, Darren Burke, Christiaan Frankenhout, Tom Onslow-Cole",Ram Racing,Mercedes-AMG GT3,02:22.37,358,46.794
+27,54,,"Klaus Bachler, Andrea Rizzoli, Zaid Ashkanani",Dinamic Motorsport,Porsche 911 GT3 R,02:22.18,357,-00:13:04.74
+28,33,AM Cup,"Christian Hook, Alexander Mattschull, Manuel Lauck, Hendrik Still",Rinaldi Racing,Ferrari 488 GT3,02:23.78,357,13.01
+29,110,,"Pippo Derani, Lucas Ordonez, Andy Soucek",M-Sport Team Bentley,Bentley Continental GT3,02:21.75,357,17.63
+30,66,,"Milan Dontje, Clemens Schmid, Kelvin van der Linde",Attempto Racing,Audi R8 LMS GT3 2019,02:21.03,357,21.644
+31,22,Silver Cup,"Ricardo Sanchez, Matt McMurry, Philipp Frommenwiler, Struan Moore",Jenson Team Rocket RJN,Honda Acura NSX GT3 2019,02:23.60,357,23.842
+32,43,Pro-AM Cup,"Christina Nielsen, Richard Heistand, David Fumanelli, Jack Hawksworth",Strakka Racing,Mercedes-AMG GT3,02:23.20,357,01:33.61
+33,19,Silver Cup,"Arno Santamato, Gerhard Tweraser, Lucas Mauron, Andrea Amici",GRT Grasser Racing Team,Lamborghini Huracan GT3 2019,02:22.83,356,17.07
+34,17,Silver Cup,"Alex MacDowall, Shae Davies, Paul Petit",Team WRT,Audi R8 LMS GT3 2019,02:23.59,356,01:30.34
+35,77,AM Cup,"Adrian Amstutz, Leo Machitski, Richard Abra, Patrick Kujala",Barwell Motorsport,Lamborghini Huracan GT3 2019,02:21.80,356,01:32.78
+36,29,AM Cup,"Christoph Lenz, Antonio Forne Tomas, Stefano Costantini, Alberto di Folco",Raton Racing by Target,Lamborghini Huracan GT3 2019,02:22.85,355,01:43.12
+37,12,Silver Cup,"Denis Dupont, Stefano Gattuso, Corey Lewis, Dean Stoneman",Ombra Racing,Lamborghini Huracan GT3 2019,02:24.97,353,34.098
+38,444,AM Cup,"Florian Scholze, Philipp Wlazik, Jens Liebhauser, Thomas Neubauer",HB Racing,Ferrari 488 GT3,02:22.50,353,01:09.53
+39,35,,"Katsumasa Chiyo, Tsugio Matsuda, Joshua Burdon",KCMG,Nissan GT-R Nismo GT3,02:21.18,352,5.84
+40,93,Pro-AM Cup,"Jonathan Hui, Chris Froggatt, Edward Cheever, Giancarlo Fisichella",Tempesta Racing,Ferrari 488 GT3,02:22.35,351,37.239
+41,488,AM Cup,"Pierre Ehret, Martin Berry, Jose Manuel Balbiani, Rory Penttinen",Rinaldi Racing,Ferrari 488 GT3,02:23.68,350,13.602
+42,16,Pro-AM Cup,"John Shen, Philippe Descombes, Benny Simonsen, Mathias Beche",Modena Motorsports,Porsche 911 GT3 R,02:22.67,348,-00:26:17.68
+43,133,Pro-AM Cup,"Roberto Pampanini, Ivan Jacoma, Stefano Monaco, Mauro Calamia",Scuderia Villorba Corse,Mercedes-AMG GT3,02:27.13,347,54.301
+44,23,AM Cup,"Eric Cayrolle, Bernard Delhez, Fabien Barthez, Timothe Buret",Tech 1 Racing,Lexus RCF GT3,02:25.48,345,03:00.47
+45,21,AM Cup,"Michael Soeryadjay, Antares Au, Francis Tjia, Remo Ruscitti",OpenRoad Racing,Porsche 911 GT3 R,02:24.64,343,48.96
+46,9,AM Cup,"Eric Maris, Marc Rostan, Karim Ojjeh, Gennaro Bonafede",Boutsen Ginion,BMW M6 GT3,02:22.54,339,1.095
+47,188,AM Cup,"Alexander West, Chris Harris, Chris Goodwin, Ross Gunn",Garage 59,Aston Martin Vantage AMR GT3,02:22.10,339,01:36.09
+48,26,Pro-AM Cup,"Pierre Yves Paque, Mickael Blanchemain, Steven Palette, Simon Gachet",Sainteloc Racing,Audi R8 LMS GT3 2019,02:24.15,338,02:01.39
+49,107,,"Jordan Pepper, Steven Kane, Jules Gounon",Bentley Team M-Sport,Bentley Continental GT3,02:22.00,321,-01:34:29.14
+50,80,AM Cup,"Sun Jingzu, Jeffrey Lee, Andrew Haryanto, Yasser Shahin",Audi Sport R8 LMS CUP,Audi R8 LMS GT3 2019,02:29.08,303,48.204
+51,72,,"Miguel Molina, Mikhail Aleshin, Davide Rigon",SMP Racing,Ferrari 488 GT3,02:21.11,294,-02:47:01.91
