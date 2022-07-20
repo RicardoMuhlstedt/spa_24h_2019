@@ -2,7 +2,9 @@
 title: "A simple analysis of the 24H Spa GT3 2019 race results data."
 author: "Ricardo Mühlstedt"
 date: '2022-07-20'
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -18,6 +20,9 @@ Diving into the results for the Spa 24-h GT3 endurance race of 2019 to unveil th
 A race results spreadsheet is a way of quick results without too much thought regarding the whole story, but it will become frustrating when you try to get a deeper understanding of the bigger picture. Comparing results and the reasons behind it may become cloudy and unreasonable compared to a graph such turns the whole process easy and friendly.
 
 ```{r processed_data}
+library(tidyverse)
+library(lubridate)
+library(ggsci)
 file_name <- "data\\spa_24_gt3_2019.csv"
 
 
