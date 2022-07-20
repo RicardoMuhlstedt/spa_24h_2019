@@ -1,6 +1,7 @@
 library(tidyverse)
 library(lubridate)
-
+library(ggsci)
+library(ggpubr)
 
 ## Loading the data --------------------------------------------
 
@@ -32,7 +33,7 @@ finished_plot %>%
 ## Pos VS. FL by cars ------------------------------------------
 
 finished_plot2 <- finished %>%
-  select(POS, TIME, LAPS, CAR)
+  select(POS, TIME, LAPS, CAR, CLASS)
 
 
 finished_plot2 %>%
@@ -47,24 +48,24 @@ finished_plot2 %>%
 
 finished_plot3 <- finished_plot2 %>%
   group_by(CAR) %>%
-  summarise(time_mean = mean(TIME %% 60)^2)
+  summarise(time_mean = mean(TIME %% 60)^ 2) %>%
+  arrange(-desc(time_mean), .by_group = TRUE)
 
 
 finished_plot3 %>%
-  ggplot(aes(time_mean, CAR)) +
-  geom_bar(fill = "darkolivegreen", stat = "identity") +
+  ggplot(aes(time_mean, reorder(CAR, time_mean))) +
+  geom_bar(stat = "identity", fill = "darkolivegreen") +
   labs(x = "Mean fastest lap",
        y = "Car model",
-       title = "Car model VS. Mean fastest lap")
+       title = "Car model VS. Mean fastest lap") 
 
 ## Mean Pos VS. Car --------------------------------------------
 
 finished_plot2 %>%
   group_by(CAR) %>%
   summarise(pos_mean = mean(POS)) %>%
-  ggplot(aes(pos_mean, CAR)) +
-  geom_bar(stat = "identity", fill = "darksalmon") +
-  scale_x_continuous(breaks = seq(0, 50, 5)) +
+  ggplot(aes(pos_mean, reorder(CAR, pos_mean))) +
+  geom_bar(stat = "identity", fill = "darkolivegreen") +
   labs(x = "Positon mean",
        y = "Car model",
        title = "Mean position VS. Car")
@@ -73,9 +74,9 @@ finished_plot2 %>%
 
 finished_plot2 %>%
   group_by(CAR) %>%
-  summarise(mean_laps = mean(LAPS %% 100)) %>%
-  ggplot(aes(mean_laps, CAR)) +
-  geom_bar(stat = "identity", fill = "deeppink2" ) +
+  summarise(mean_laps = mean(LAPS)) %>%
+  ggplot(aes(mean_laps, reorder(CAR, mean_laps))) +
+  geom_bar(stat = "identity", fill = "darkolivegreen" ) +
   labs(x = "Laps",
        y = "Car model",
        title = "Laps VS. Car model")
