@@ -1,0 +1,108 @@
+---
+title: "A simple analysis of the 24H Spa GT3 2019 race results data."
+author: "Ricardo Mühlstedt"
+date: '2022-07-20'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Abstract
+
+Diving into the results for the Spa 24-h GT3 endurance race of 2019 to unveil the reasons and variables of the data, potentially finding interesting results and patterns in the driver's skill level and the cars used in the race, with the use of graphs to show the relation between the variables
+
+## Introduction
+
+A race results spreadsheet is a way of quick results without too much thought regarding the whole story, but it will become frustrating when you try to get a deeper understanding of the bigger picture. Comparing results and the reasons behind it may become cloudy and unreasonable compared to a graph such turns the whole process easy and friendly.
+
+```{r processed_data}
+file_name <- "data\\spa_24_gt3_2019.csv"
+
+
+fac_level <- c("Pro Cup", "Silver Cup", "Pro-AM Cup", "AM Cup")
+finished <- read.csv(file = file_name) %>%
+  select(-GAP) %>%
+  mutate(CLASS = if_else(CLASS == "", "Pro Cup", CLASS),
+         CLASS = factor(CLASS, levels = fac_level),
+         TIME = ms(TIME),
+         TIME = period_to_seconds(TIME))
+```
+
+## Results
+
+The first plot demonstrates the class of the competition, their positions, fastest lap and number of laps.
+
+```{r plot1}
+finished_plot <- finished %>%
+  select(POS, TIME, LAPS, CLASS)
+
+
+finished_plot %>%
+  ggplot(aes(POS, TIME)) +
+  geom_point(aes(color = LAPS), size = 3) +
+  labs(y = "Fastest lap in seconds",
+       x = "Position",
+       title = "Positon VS. Fastest lap") +
+  facet_wrap(~CLASS)
+```
+
+Classes and their respective positions become clear and intuitive.
+
+The same goes for the second plot, showing the car models, fastest laps, and position.
+
+```{r plot2}
+finished_plot2 <- finished %>%
+  select(POS, TIME, LAPS, CAR)
+
+
+finished_plot2 %>%
+  ggplot(aes(POS, TIME)) +
+  geom_point(aes(color = CAR), size = 3) +
+  labs(y = "Fastest lap in seconds",
+       x = "Position",
+       title = "Positon VS. Fastest lap") +
+  scale_color_discrete(name = "Car model")
+```
+
+Tracking down cars with the fastest laps on the GT3 group requires changes to confirm the difference is noticeable to the naked eye. Converting the time stamp back to minutes and squaring up the difference. This process ensures that we capture the difference in milliseconds between every car model.
+
+```{r plot3}
+finished_plot3 <- finished_plot2 %>%
+  group_by(CAR) %>%
+  summarise(time_mean = mean(TIME %% 60)^ 2) %>%
+  arrange(-desc(time_mean), .by_group = TRUE)
+
+
+finished_plot3 %>%
+  ggplot(aes(time_mean, reorder(CAR, time_mean))) +
+  geom_bar(stat = "identity", fill = "darkolivegreen") +
+  labs(x = "Mean fastest lap",
+       y = "Car model",
+       title = "Car model VS. Mean fastest lap") 
+```
+
+```{r plot4}
+finished_plot2 %>%
+  group_by(CAR) %>%
+  summarise(pos_mean = mean(POS)) %>%
+  ggplot(aes(pos_mean, reorder(CAR, pos_mean))) +
+  geom_bar(stat = "identity", fill = "darkolivegreen") +
+  labs(x = "Positon mean",
+       y = "Car model",
+       title = "Mean position VS. Car")
+
+```
+
+```{r plot5}
+finished_plot2 %>%
+  group_by(CAR) %>%
+  summarise(mean_laps = mean(LAPS)) %>%
+  ggplot(aes(mean_laps, reorder(CAR, mean_laps))) +
+  geom_bar(stat = "identity", fill = "darkolivegreen" ) +
+  labs(x = "Laps",
+       y = "Car model",
+       title = "Laps VS. Car model")
+```
+
