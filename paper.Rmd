@@ -8,7 +8,9 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,
+                      collapse = TRUE,
+                      comment = "#>")
 ```
 
 ## Abstract
@@ -33,6 +35,8 @@ finished <- read.csv(file = file_name) %>%
          CLASS = factor(CLASS, levels = fac_level),
          TIME = ms(TIME),
          TIME = period_to_seconds(TIME))
+knited_data <- finished %>%
+  knitr::kable()
 ```
 
 ## Results
@@ -110,4 +114,17 @@ finished_plot2 %>%
        y = "Car model",
        title = "Laps VS. Car model")
 ```
+
+## Conclusion
+Graphs let us see the best results and cars for the race.
+Utilizing the information given to us, we can conclude that:
+ 
+ * The most reliable car is the __Porsche 911 GT3 R__
+ 
+ * The least reliable cars are the __Ferrari 488 GT3__
+ 
+   * Note that there were only two __Bentley Continentals GT3__, so there was not much data to confirm the reasons for its poor performance.
+ 
+ * __Pro Cup__ class drivers, are much more skilled, with the highest mean on the fastest laps.
+ 
 
